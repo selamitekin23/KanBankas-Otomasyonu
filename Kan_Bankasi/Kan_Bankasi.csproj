@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BFFAA7D-9F97-4D1F-ABFE-21A1B871A517}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kan_Bankasi</RootNamespace>
+    <AssemblyName>Kan_Bankasi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls_DonorGirisi.cs" />
+    <Compile Include="cls_donor_soru_olustur.cs" />
+    <Compile Include="cls_HastaIslemleri.cs" />
+    <Compile Include="cls_Sorgulama.cs" />
+    <Compile Include="cls_Testler.cs" />
+    <Compile Include="cls_giris_kontrol.cs" />
+    <Compile Include="cls_kan_grubu_girisi.cs" />
+    <Compile Include="cls_kullanici_kaydi.cs" />
+    <Compile Include="frm_AnaKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AnaKontrol.Designer.cs">
+      <DependentUpon>frm_AnaKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Ayarlar.Designer.cs">
+      <DependentUpon>frm_Ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CrossMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CrossMatch.Designer.cs">
+      <DependentUpon>frm_CrossMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DonorIslemNumarasıKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DonorIslemNumarasıKontrol.Designer.cs">
+      <DependentUpon>frm_DonorIslemNumarasıKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DonorSoruCevapla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DonorSoruCevapla.Designer.cs">
+      <DependentUpon>frm_DonorSoruCevapla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DonorBilgiTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DonorBilgiTest.Designer.cs">
+      <DependentUpon>frm_DonorBilgiTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DonorFizikIncelemeGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DonorFizikIncelemeGiris.Designer.cs">
+      <DependentUpon>frm_DonorFizikIncelemeGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DonorKayitGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DonorKayitGirisi.Designer.cs">
+      <DependentUpon>frm_DonorKayitGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DonorAyarSoruTanimlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DonorAyarSoruTanimlama.Designer.cs">
+      <DependentUpon>frm_DonorAyarSoruTanimlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FizikIncelemeKayitlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FizikIncelemeKayitlari.Designer.cs">
+      <DependentUpon>frm_FizikIncelemeKayitlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HastaIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HastaIslemleri.Designer.cs">
+      <DependentUpon>frm_HastaIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KanBankasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KanBankasi.Designer.cs">
+      <DependentUpon>frm_KanBankasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KanBankasiGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KanBankasiGirisEkrani.Designer.cs">
+      <DependentUpon>frm_KanBankasiGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AyarKanGrubuİsmiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AyarKanGrubuİsmiGiris.Designer.cs">
+      <DependentUpon>frm_AyarKanGrubuİsmiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KanGirisFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KanGirisFormu.Designer.cs">
+      <DependentUpon>frm_KanGirisFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KullaniciKayitGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KullaniciKayitGiris.Designer.cs">
+      <DependentUpon>frm_KullaniciKayitGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Sorgulamalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Sorgulamalar.Designer.cs">
+      <DependentUpon>frm_Sorgulamalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SoruKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SoruKontrol.Designer.cs">
+      <DependentUpon>frm_SoruKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_StokKan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_StokKan.Designer.cs">
+      <DependentUpon>frm_StokKan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm_DonorTestGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DonorTestGirisi.Designer.cs">
+      <DependentUpon>frm_DonorTestGirisi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_AnaKontrol.resx">
+      <DependentUpon>frm_AnaKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Ayarlar.resx">
+      <DependentUpon>frm_Ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CrossMatch.resx">
+      <DependentUpon>frm_CrossMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DonorIslemNumarasıKontrol.resx">
+      <DependentUpon>frm_DonorIslemNumarasıKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DonorSoruCevapla.resx">
+      <DependentUpon>frm_DonorSoruCevapla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DonorBilgiTest.resx">
+      <DependentUpon>frm_DonorBilgiTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DonorFizikIncelemeGiris.resx">
+      <DependentUpon>frm_DonorFizikIncelemeGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DonorKayitGirisi.resx">
+      <DependentUpon>frm_DonorKayitGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DonorAyarSoruTanimlama.resx">
+      <DependentUpon>frm_DonorAyarSoruTanimlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FizikIncelemeKayitlari.resx">
+      <DependentUpon>frm_FizikIncelemeKayitlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_HastaIslemleri.resx">
+      <DependentUpon>frm_HastaIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KanBankasi.resx">
+      <DependentUpon>frm_KanBankasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KanBankasiGirisEkrani.resx">
+      <DependentUpon>frm_KanBankasiGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AyarKanGrubuİsmiGiris.resx">
+      <DependentUpon>frm_AyarKanGrubuİsmiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KanGirisFormu.resx">
+      <DependentUpon>frm_KanGirisFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KullaniciKayitGiris.resx">
+      <DependentUpon>frm_KullaniciKayitGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Sorgulamalar.resx">
+      <DependentUpon>frm_Sorgulamalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SoruKontrol.resx">
+      <DependentUpon>frm_SoruKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_StokKan.resx">
+      <DependentUpon>frm_StokKan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frm_DonorTestGirisi.resx">
+      <DependentUpon>frm_DonorTestGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kan bankasi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kan bankasi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kan bankasi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evet-hayir1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hayir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kapama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ileri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kullanici-Giris-Ekranlari1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kanbankasi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kan_grublari.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kan_bankasi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kan resim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\384138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3841381.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anaekran.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kan-bankasi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayarlar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hasta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriş kan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sorgu.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
